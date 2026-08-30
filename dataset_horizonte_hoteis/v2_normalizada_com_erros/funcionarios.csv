@@ -1,0 +1,181 @@
+﻿Funcionario_ID;Funcionario_Nome;Hotel_ID;Setor;Cargo;Turno;Data_Admissao;Salario_Mensal
+FUN-78820;Elonice Bartoloni Bordonaro;HTL-602;Manutenção;Técnico de Manutenção;Tarde;08/05/2025;3349,75
+FUN-73856;Simião Assis Yamaguchi;HTL-602;Governança;Camareira;Noite;21/11/2020;1909,92
+FUN-40959;Anete Araxá Xavier;HTL-602;Recepção;Recepcionista;Noite;2022-12-13;3183,09
+FUN-01568;Jerônimo Amil;HTL-356;Manutenção;Eletricista Predial;Tarde;31/12/2019;3659,05
+FUN-08234;Bernardo Kobayashi Amiraldo;HTL-356;Governança;Camareira;Manhã;26.08.23;2229,38
+FUN-59097;Lúcio Schaefer Abade;HTL-356;Recepção;AUDITOR NOTURNO;Noite;12/07/2020;3265,74
+FUN-32345;Heinz Ameixa Grüber;HTL-485;Manutenção;Eletricista Predial;Manhã;2022-11-10;4069,57
+FUN-96106;Iraci Amiral;HTL-485;Governança;Supervisora de Andar;Manhã;17/01/2025;2893,28
+FUN-71403;Leonildes Costa Arduno;HTL-485;Recepção;Auditor Noturno;Manhã;28/03/2017;2795,88
+FUN-28577;Jânio Aparo Guerreiro;HTL-785;Manutenção;Eletricista Predial;Tarde;2025-07-18;3328,84
+FUN-96354;Ibraim Heller Camargo;HTL-785;Governança;Camareira;Manhã;26/05/2018;2355,81
+FUN-07844;Lênio Cella Anjos;HTL-785;Recepção;Auditor Noturno;Noite;29/10/2015;3370,82
+FUN-50800;Lilian Amaral Manske;HTL-878;Manutenção;Técnico de Manutenção;Noite;17/04/2019;2518,21
+FUN-34873;Damiela Ambroses;HTL-878;Governança;Camareira;Noite;03/08/2023;2356,43
+FUN-77293;Elizete Benetton;HTL-878;Recepção;Recepcionista;Noite;2018-01-31;2399,39
+FUN-34079;Elói Cipollone Albanesi;HTL-103;Manutenção;Técnico de Manutenção;Noite;27/08/2022;2315,38
+FUN-13975;Valdirene Bastos Ardina;HTL-103;Governança;Camareira;Manhã;17-01-2026;2194,94
+FUN-51678;Jennifer Bonanomi Figueiredo;HTL-103;Recepção;Concierge;Manhã;09/01/2025;3331,26
+FUN-15784;Kaio Campi Battistini;HTL-782;Manutenção;Técnico de Manutenção;Manhã;10-04-2022;2356,17
+FUN-64706;Amilinha Hack Arcon;HTL-782;Governança;Supervisora de Andar;Manhã;2024-12-29;2624,87
+FUN-95136;Aristeu Passos;HTL-782;Recepção;Concierge;Tarde;30-01-2025;3549,26
+FUN-45111;Ervino Held Alvinhos;HTL-105;Manutenção;Eletricista Predial;Tarde;07/12/2020;3607,23
+FUN-81524;Eustáquio Pacheco Barreto;HTL-105;Governança;Supervisora de Andar;Manhã;24-01-2017;2929,26
+FUN-50023;Milena Krueger;HTL-105;Recepção;AUDITOR NOTURNO;Noite;11-02-2025;2655,3
+FUN-39946;Ardósia Bruno Araçatuba;HTL-606;Manutenção;Eletricista Predial;Tarde;10/01/2024;3813,97
+FUN-08486;Raquel Adão;HTL-606;Governança;Camareira;Tarde;20/01/2025;1758,97
+FUN-66099;Lazaro Candido Campigotto;HTL-606;Recepção;Recepcionista;Manhã;23/08/2015;2928,32
+FUN-08849;Lucilma Arconde;HTL-108;Manutenção;Técnico de Manutenção;Tarde;05/02/2021;2650,35
+FUN-22607;Isaías Lutterbeck;HTL-108;Governança;Camareira;Noite;2017-06-29;2349,79
+FUN-81030;Jander Aldeia Espírito Santo;HTL-108;Recepção;Recepcionista;Tarde;27/09/2021;2774,81
+FUN-10117;Lucilma Campigotto Hesse;HTL-485;Gestão;Gerente de Hospedagem;Noite;04/01/2026;9832,53
+FUN-20102;Regina Ikeda;HTL-782;Gestão;Gerente Geral;Manhã;14/12/2017;12012,76
+FUN-87201;Adora Manske Feldmann;HTL-606;Gestão;Gerente de Hospedagem;Manhã;02.09.23;6991,97
+FUN-08472;Fumiko Arcadio Grimm;HTL-108;Recepção;Auditor Noturno;Tarde;30.12.24;3022,81
+FUN-97185;Anselmo Amaral;HTL-606;Gestão; Gerente Geral;Manhã;01/06/2019;13987,41
+FUN-12735;Jânio Quadros Lutterbeck;HTL-606;A&B;Cozinheiro;Noite;2018-03-03;3014,07
+FUN-70857;Augoura Barros;HTL-785;Recepção;Concierge;Tarde;08/05/2021;3352,86
+FUN-87234;Rosângela Andrade Antero;HTL-103;Governança;Camareira;Tarde;04/04/2025;2015,74
+FUN-49013;Elionarda Nishimura;HTL-782;Governança;Supervisora de Andar;Manhã;02/08/2017;2664,31
+FUN-78842;Everaldo Artoni Grüber;HTL-602;Gestão;Gerente de Hospedagem;Manhã;2020-06-22;6605,43
+FUN-31422;Ladislau Apuzzo;HTL-103;Recepção;Recepcionista;Noite;01/07/2017;2334,15
+FUN-61213;Darlley Bocchi Borsari;HTL-485;Gestão;Gerente de Hospedagem;Noite;23/06/2019;7711,39
+FUN-16845;Dami Flor Belotti;HTL-878;Recepção;Concierge;Manhã;13/12/2016;3321,19
+FUN-55799;Rosmari Arafat Antipode;HTL-103;Governança;Supervisora de Andar;Manhã;04-05-2016;2759,81
+FUN-43948;Renoir Ascenção Bravi;HTL-602;Gestão;Gerente Geral;Tarde;25.08.24;14036,35
+FUN-71181;Luisa Tsuda Arnaldi;HTL-606;Manutenção;Eletricista Predial;Manhã;14/10/2023;2841,03
+FUN-50716;Manoelito Archela Amilaga;HTL-785;Gestão;Gerente Geral;Noite;01/03/2017;16468,2
+FUN-65221;Amayra Diniz Cavalheiro;HTL-878;A&B;Cozinheiro;Noite;12/03/2016;3417,75
+FUN-47371;Elorise Amancio Calvani;HTL-108;Governança;Supervisora de Andar;Tarde;24/02/2026;3049,21
+FUN-23286;Creomar Bertoni Pinto;HTL-103;Manutenção;Técnico de Manutenção;Tarde;2021-06-14;3219,15
+FUN-71755;Manuela Grimm;HTL-782;A&B;Garçom;Manhã;06/10/2018;2449,61
+FUN-54780;Jarbas Rodrigues;HTL-878;A&B;Barman;Tarde;21/12/2015;2588,19
+FUN-84492;Auristela Arago Kiefer;HTL-108;Gestão;Gerente Geral;Manhã;23/11/2020;12665,19
+FUN-94475;Aniete Amazónia Apuzzo;HTL-606;Gestão;Gerente Geral;Tarde;19/04/2023;15735,51
+FUN-29826;Denisia Aldeia Sampaio;HTL-878;Manutenção;Técnico de Manutenção;Noite;22-03-2022;3342,92
+FUN-77668;Joiciele Gieseler Araçatuba;HTL-782;Gestão;Gerente Geral;Manhã;2022-04-24;14959,75
+FUN-65780;Severino Sasaki Elias;HTL-602;Manutenção;Técnico de Manutenção;Noite;30/03/2021;3417,1
+FUN-15371;Elorisete Berger;HTL-485;Recepção;Recepcionista;Tarde;13.11.21;2537,0
+FUN-32008;Silvestre Espírito Santo;HTL-485;Gestão;Gerente de Hospedagem;Tarde;17/01/2026;8003,77
+FUN-25313;Ambrisia Sales Taveira;HTL-108;Governança;Supervisora de Andar;Manhã;15/06/2022;2447,02
+FUN-63883;RUBENS FRANKE ARAGONI;HTL-105;Recepção;Recepcionista;Noite;11/11/2021;2504,31
+FUN-04670;Lorena  Inoue;HTL-785;Governança;Camareira;Tarde;17/04/2016;2368,61
+FUN-04037;Jani Lobato;HTL-485;Recepção;Recepcionista;Manhã;29/11/2021;2436,38
+FUN-03287;Jeovani Bacci Lorenz;HTL-105;A&B;Barman;Tarde;11/11/2020;2049,86
+FUN-06447;Epitácio Galvão;HTL-785;Recepção;Recepcionista;Noite;13/08/2021;2952,15
+FUN-37715;Kaio Mäder Friedrich;HTL-606;Governança;Camareira;Noite;30/06/2022;2201,25
+FUN-64450;Alertina Bertoldi Rodrigues;HTL-602;Recepção;Concierge;Noite;29-03-2021;2920,35
+FUN-88121; Hiroko Batista Caldas;HTL-782;Manutenção;Técnico de Manutenção;Manhã;04/04/2016;2372,59
+FUN-57110;Jânio Paula Archimedes;HTL-356;Gestão;Gerente de Hospedagem;Noite;16/03/2020;6659,79
+FUN-52300;Marvaldo Ardin Gama;HTL-105;Governança;Camareira;Noite;08.11.18;1931,58
+FUN-02100;Damira Sakamoto Hack;HTL-606;Gestão;Gerente Geral;Manhã;08/11/2024;10544,44
+FUN-54122;Roni Lorenz Krueger;HTL-356;Gestão;Gerente Geral;Noite;28/04/2016;16631,45
+FUN-91260;Lourival Alarcão Alvarengas;HTL-602;Gestão;Gerente de Hospedagem;Tarde;13.07.24;6626,93
+FUN-37129;Angélica Seabra Arconte;HTL-485;Gestão;Gerente Geral;Tarde;23/06/2021;9604,49
+FUN-76103;Iracelma Ameixial;HTL-105;Manutenção;Técnico de Manutenção;Tarde;31/10/2024;2616,97
+FUN-08109;Paulo Hayakawa Albergaria;HTL-108;Governança;Supervisora de Andar;Tarde;05/01/2016;3196,42
+FUN-50986;Basílio Frank Diesel;HTL-878;A&B;Garçom;Tarde;15/03/2016;2197,66
+FUN-09158;Úrsula Jost;HTL-108;A&B;Garçom;Tarde;03.10.25;2235,87
+FUN-95116;Benício Grimaldi Araxá;HTL-878;Gestão;Gerente de Hospedagem;Noite;07/08/2025;9492,46
+FUN-16740;Cecília Aramis;HTL-606;Recepção;Recepcionista;Manhã;2019-12-07;3194,5
+FUN-55560;Leonardo Avanzini Cavalcante;HTL-785;Gestão;Gerente Geral;Tarde;04/10/2020;11807,03
+FUN-02909;Epitácio Abilio Michels;HTL-108;Governança;Camareira;Manhã;25/12/2019;2322,73
+FUN-83865;Félix Melo Benedetti;HTL-602;Governança;Camareira;Noite;04.06.21;1843,81
+FUN-85412;Anélia Drissen Amiran;HTL-602;Gestão;Gerente Geral;Tarde;08/07/2020;13843,09
+FUN-91256;Lajar Bruno Guerreiro;HTL-485;Gestão;Gerente de Hospedagem;Tarde;13/11/2018;6843,05
+FUN-12040;Manuela Feitosa;HTL-785;Governança;Supervisora de Andar;Manhã;01/11/2019;2850,95
+FUN-09378;Valéska Acioli Kroener;HTL-785;Gestão;Gerente Geral;Noite;13/01/2025;10235,59
+FUN-82886;Elinor Franke Alves;HTL-356;Manutenção;Técnico de Manutenção;Tarde;03/11/2019;3398,0
+FUN-11460;Ingo Abreu Sousa;HTL-108;Gestão;Gerente Geral;Noite;18.04.17;16346,2
+FUN-94946;Naila Miyazaki Astori;HTL-356;Manutenção;Eletricista Predial;Tarde;03/02/2022;3665,06
+FUN-00614;Vera Löffler Arden;HTL-105;Recepção;Auditor Noturno;Noite;05/01/2017;3382,35
+FUN-64047;Osvaldir Antipa Siqueira;HTL-782;Governança;Camareira;Noite;27/10/2024;1856,36
+FUN-26294;Milena Arcanjo;HTL-878;A&B;Garçom;Tarde;01.02.21;1970,4
+FUN-75391;Aparecida Antipa Ameixial;HTL-785;Recepção;Concierge;Manhã;2017-11-21;3519,38
+FUN-87712;Joilson Ota;HTL-485;A&B;Garçom;Noite;27-02-2018;2472,59
+FUN-23383;Rosa Grüber Menezes;HTL-785;Manutenção;Eletricista Predial;Noite;15/09/2020;3057,45
+FUN-67282;Genar Capraro Ecker;HTL-782;Governança;Supervisora de Andar;Tarde;01/12/2018;3303,22
+FUN-48683;Gloria Amende Baglietto;HTL-878;Governança;Supervisora de Andar;Noite;03/02/2022;3399,97
+FUN-16922;Eunice Arconte Artoni;HTL-602;Governança;Supervisora de Andar;Manhã;21/10/2023;2852,22
+FUN-86199;Vicente Battistini;HTL-356;Governança;Supervisora de Andar;Noite;15.10.20;3200,18
+FUN-07814;Ivaldo  Castilho Couto;HTL-105;Governança;Camareira;Tarde;19/08/2018;1864,67
+FUN-74014;Nathan Fujita Schaefer;HTL-606;Governança;Supervisora de Andar;Tarde;22/07/2023;2506,41
+FUN-86194;Viviane Hilbert Fujita;HTL-602;Manutenção;Técnico  de Manutenção;Tarde;01-08-2015;2622,4
+FUN-83716;Roberto Garcia Arcoverde;HTL-602;A&B;Barman;Tarde;14-02-2018;2144,79
+FUN-35080;Waleska Diesel;HTL-103;Governança;Supervisora de Andar;Noite;13-07-2017;3321,66
+FUN-09324;Eva Bertozzi;HTL-356;Governança;Camareira;Noite;25/10/2015;2276,91
+FUN-82240;Valdemir Ambrosi;HTL-782;Recepção;Recepcionista;Manhã;08/08/2016;2331,09
+FUN-59516;Aelma Lehmann Callegari;HTL-878;Recepção;Auditor Noturno;Manhã;07-12-2018;3078,36
+FUN-91682;Cecília  Bezerra Aramis;HTL-485;Gestão;Gerente Geral;Manhã;23-09-2021;14121,62
+FUN-23361;Idalina Elias Antipas;HTL-105;Manutenção;Eletricista Predial  ;Manhã;24/08/2017;3395,83
+FUN-96752;Aldair Vale Rego;HTL-356;A&B;Barman;Noite;20/04/2018;2852,69
+FUN-90839;Nobuo Flores Alencastro;HTL-356;Governança;Camareira;Tarde;28/03/2023;2323,97
+FUN-66580;Auditene Bertoldi;HTL-105;Manutenção;Eletricista Predial;Noite;25/05/2018;3088,58
+FUN-67814;Naircio Lemos Azambuja;HTL-105;Recepção;RECEPCIONISTA;Noite;04-04-2025;2302,5
+FUN-36000;Joaldo Ecker Franzen;HTL-105;Gestão;Gerente Geral;Tarde;23/01/2023;16118,17
+FUN-95155;Naelson Ardin Antoniazzi;HTL-602;Gestão;Gerente de Hospedagem;Manhã;14/05/2019;6905,15
+FUN-48159;Agostinho Ardone Bignami;HTL-785;Governança;Camareira;Manhã;02/04/2024;1937,65
+FUN-08828;Lorenna Monteiro;HTL-103;Governança;Camareira;Noite;08/10/2015;2181,73
+FUN-41540;Raquel Cipollone Queirós;HTL-356;Governança;Camareira;Manhã;21/09/2017;2044,53
+FUN-89330;Taise Nishimura Ardeal;HTL-105;Governança;Camareira;Noite;27.08.17;1977,89
+FUN-58686;Elonilda Almada Barros;HTL-105;A&B;Garçom;Manhã;07/04/2016;2208,08
+FUN-22027;Auristela Alencastro Assis;HTL-485;Manutenção;Eletricista Predial;Noite;2025-03-08;3774,32
+FUN-17963;Amélita Suzuki;HTL-356;Recepção;Auditor Noturno;Noite;06/05/2016;3484,64
+FUN-17671;Efigênia Luca Carboni;HTL-878;Gestão;Gerente Geral;Tarde;27/06/2020;17146,34
+FUN-74292;Rudolf Zimmer Duarte;HTL-105;Gestão;Gerente Geral;Noite;23.09.16;16658,35
+FUN-05739;Nathan Archanjo;HTL-485;Governança;Camareira;Tarde;01.01.23;2383,99
+FUN-52793;Lian Muniz;HTL-606;Manutenção;Técnico de Manutenção;Tarde;2024-10-05;2666,65
+FUN-43763;Bruna Mayer Galvão;HTL-782;Manutenção;Eletricista Predial;Tarde;2015-12-21;3133,35
+FUN-02284;Heitor Saraiva Haas;HTL-878;A&B;Barman;Tarde;2021-07-21;2796,19
+FUN-25422;Pedro Moura Kobayashi;HTL-105;Gestão;Gerente de Hospedagem;Manhã;25/05/2020;8244,46
+FUN-62419;Baltazar Borges Krause;HTL-878;Recepção;Concierge;Noite;01/06/2016;4145,2
+FUN-21094;Tino Michels Galvão;HTL-103;Governança;Camareira;Tarde;07/06/2021;1825,46
+FUN-88671;Elizinete Antonioli Amilde;HTL-878;Gestão;Gerente de Hospedagem;Manhã;20.08.20;6486,45
+FUN-15867;Jandaia Arcis;HTL-878;Manutenção;Eletricista  Predial;Tarde;03/12/2023;3565,18
+FUN-29213;Valeska Hermann Alegria;HTL-606;A&B;Barman;Manhã;08/05/2016;2777,09
+FUN-30585;Rafael Abbate;HTL-782;Recepção;Concierge;Tarde;30/12/2024;3870,9
+FUN-76325;Warley Weiss Angiolini;HTL-878;Gestão;Gerente de Hospedagem;Manhã;10/09/2020;9017,49
+FUN-92311;Adalina Anjos;HTL-785;Manutenção;Técnico de Manutenção;Noite;25/10/2017;2494,12
+FUN-70697;Makoto Ameixoeira;HTL-606;Gestão;Gerente Geral;Tarde;31/10/2019;10126,27
+FUN-97609;Ian Brunetti;HTL-782;Gestão;Gerente Geral;Noite;19/02/2016;12282,29
+FUN-36473;Keiko Lüdtke Elias;HTL-785;Governança;camareira;Noite;09/07/2023;2090,82
+FUN-57664;Angelines Pinto;HTL-485;Manutenção;Técnico de Manutenção;Manhã;27.11.20;2774,84
+FUN-69104;Rangel Amaro;HTL-356;Manutenção;Eletricista Predial;Manhã;10/05/2018;3768,46
+FUN-90234;Amábile Sousa;HTL-602;Recepção;Auditor Noturno;Manhã;21/09/2018;3306,72
+FUN-69727;Jânio Matsuo;HTL-878;Governança;Supervisora de Andar;Noite;11/12/2023;2969,86
+FUN-37973;Horácio Bevilacqua Noguchi;HTL-785;A&B;Garçom;Noite;26/11/2021;2467,78
+FUN-33205;Lamar Calamari Borges;HTL-606;Recepção;Concierge;Manhã;05.09.18;3461,94
+FUN-03036;Laercio Aramis Archane;HTL-103;Manutenção;Eletricista Predial;Noite;20.05.19;3031,9
+FUN-39155;Ivanice Arago;HTL-878;Gestão;Gerente de Hospedagem;Noite;2019-10-08;9075,46
+FUN-12576;Amireh Ishii;HTL-606;Manutenção;Eletricista Predial;Manhã;11/12/2018;4067,99
+FUN-56921;Brigitte Machado Goto;HTL-785;A&B;Cozinheiro;Tarde;15/10/2017;3561,79
+FUN-36723;Venâncio Falcão Vargas;HTL-878;Gestão;Gerente Geral;Noite;24/06/2023;17863,09
+FUN-67710;Rosmari Loureiro;HTL-602;Governança;Supervisora de Andar;Noite;27-06-2018;2951,42
+FUN-09102;Nildo Bomfim Arcillas;HTL-356;Manutenção;Técnico de Manutenção;Noite;28-07-2015;3506,07
+FUN-57952;Ilse Noguchi;HTL-105;Recepção;Auditor Noturno;Noite;13/07/2018;2634,42
+FUN-49170;Lorenna Sales Caldas;HTL-485;Manutenção;Eletricista Predial;Manhã;21.10.23;3680,35
+FUN-71082;Marcondes  Serra Uchôa;HTL-782;Gestão;Gerente Geral;Noite;2019-05-25;14698,11
+FUN-92125;Werner Boaventura Ameixial;HTL-485;A&B;Barman;Noite;18/11/2020;2985,89
+FUN-64869;Berenice Amiral;HTL-105;Gestão;Gerente de Hospedagem;Manhã;13/12/2021;7780,23
+FUN-63261;Kayla Cavalcanti Cavalli;HTL-485;A&B;Garçom;Noite;21.11.16;2049,63
+FUN-10947;Bruna Meissner;HTL-606;Governança;Supervisora de Andar;Manhã;03.07.19;2421,19
+FUN-83312;Hercílio Rezende Chiappetta;HTL-103;Gestão;Gerente de Hospedagem;Noite;16/11/2020;6996,56
+FUN-16357;Darleni Soares Amevo;HTL-785;Gestão;Gerente de Hospedagem;Tarde;03-03-2018;8167,21
+FUN-71493;Nerivaldo Hammes;HTL-108;Governança;Supervisora de Andar;Noite;11-10-2023;3187,77
+FUN-79088;Cauã Rodrigues Lobato;HTL-606;Recepção;Concierge;Noite;2016-05-19;2617,7
+FUN-70436;Lívio Carosi Portela;HTL-103;Governança;Supervisora de Andar;Manhã;15/11/2019;3060,94
+FUN-28436;Damião Borges Carnevali;HTL-785;Gestão;Gerente Geral;Manhã;24/06/2021;16256,16
+FUN-97855;Lorival Amende Krebs;HTL-878;Gestão;Gerente Geral;Noite;08/06/2019;13647,48
+FUN-64755;Aruca Apolonia Amilis;HTL-485;Manutenção;Eletricista Predial;Tarde;02/10/2022;3165,46
+FUN-48888;Mabele Brandão Aramburu;HTL-103;Recepção;Auditor Noturno;Noite;13-01-2016;2848,7
+FUN-50083;Ivonete Capelli;HTL-878;A&B;Cozinheiro;Noite;28/11/2022;2752,05
+FUN-76814;Akemi Vogt Graf;HTL-606;Recepção;Concierge;Manhã;2023-08-10;4157,59
+FUN-73145;Brenno Ambiel Lemos;HTL-105;Recepção;Recepcionista;Manhã;10/04/2024;2237,64
+FUN-41856;Iolanda Sakamoto;HTL-602;Gestão;Gerente de Hospedagem;Noite;29/07/2024;7529,13
+FUN-92045;Deusdedit Apuzzo Santoro;HTL-103;Governança;Camareira;Noite;17.10.23;2087,86
+FUN-66926;Wiliam Drees Ambroses;HTL-782;A&B;Barman;Tarde;2024-11-30;2952,39
+FUN-86160;Sidney Matsuda Quadros;HTL-785;Recepção;Auditor Noturno;Manhã;22/12/2015;3270,34
+FUN-19473; Marcondes Siqueira;HTL-602;Manutenção;Eletricista Predial;Tarde;05-06-2018;3644,66
+FUN-06798;Katia Matos Bui;HTL-103;A&B;Barman;Manhã;2023-07-02;2850,57
+FUN-18700;Jaciete Serra;HTL-105;Manutenção;Eletricista Predial;Noite;26/10/2023;3327,6

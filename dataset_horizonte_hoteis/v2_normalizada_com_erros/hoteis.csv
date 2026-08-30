@@ -1,0 +1,11 @@
+﻿Hotel_ID;Hotel_Nome;Bandeira;Cidade;UF;Perfil_Destino;Categoria_Estrelas;Qtd_Quartos;Ano_Inauguracao;Nota_Media_Avaliacao
+HTL-602;Horizonte Plaza Gramado;Horizonte Plaza;Gramado;RS;serra;4;44;2001;7.9
+HTL-356;Horizonte Grand Resort Campos do Jordão;Horizonte Grand Resort;Campos do Jordão;SP;serra;5;38;2020;8.7
+HTL-485;Horizonte Grand Resort Porto de Galinhas;Horizonte Grand Resort; Porto de Galinhas;PE;praia;5;52;2009;8.6
+HTL-785;Horizonte Plaza Búzios;Horizonte Plaza;Búzios;RJ;praia;4;36;2008;8,9
+HTL-878;Horizonte Plaza Maceió;Horizonte Plaza;Maceió;AL;praia;4;46;1999;9,0
+HTL-103;Horizonte Express Florianópolis;Horizonte Express; Florianópolis;SC;praia;3;40;2004;8.7
+HTL-782;Horizonte Plaza Bonito;Horizonte Plaza;bonito;MS;eco;4;30;2022;7.9
+HTL-105;Horizonte Express Foz do Iguaçu;Horizonte Express;Foz do Iguaçu;PR;eco;3;42;2013;8,8
+HTL-606;Horizonte Express São Paulo;Horizonte Express;São Paulo;SP;urbano;3;58;2017;9.0
+HTL-108;Horizonte Plaza Belo Horizonte;Horizonte Plaza;Belo Horizonte;MG;urbano;4;40;2003;7.6

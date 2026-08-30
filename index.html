@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Desafio completo de Power BI com dados sintéticos da rede fictícia Horizonte Hotéis & Resorts.">
+  <meta name="theme-color" content="#092f38">
+  <meta property="og:title" content="Horizonte Hotéis — Desafio Power BI">
+  <meta property="og:description" content="Do dado bruto ao dashboard executivo: uma atividade prática de hotelaria.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/horizonte-hero.png">
+  <title>Horizonte Hotéis — Desafio Power BI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="reading-progress" aria-hidden="true"><span id="readingBar"></span></div>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Horizonte Hotéis — início">
+      <span class="brand-mark" aria-hidden="true">H</span>
+      <span><strong>Horizonte</strong><small>Hotéis &amp; Resorts</small></span>
+    </a>
+    <button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="mainNav">Menu</button>
+    <nav id="mainNav" aria-label="Navegação principal">
+      <a href="#missao">Missão</a>
+      <a href="#dados">Dados</a>
+      <a href="#jornada">Jornada</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#entrega">Entrega</a>
+    </nav>
+    <button class="theme-button" id="themeButton" type="button" aria-label="Alternar tema">◐</button>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio">
+      <img src="assets/horizonte-hero.png" alt="Resort contemporâneo com piscina e vista para o litoral ao amanhecer">
+      <div class="hero-overlay"></div>
+      <div class="hero-content wrap">
+        <p class="eyebrow">PROJETO PRÁTICO · POWER BI</p>
+        <h1>Transforme uma operação hoteleira em <em>decisões.</em></h1>
+        <p class="hero-copy">Você recebeu dois anos de dados da rede Horizonte. Sua missão é limpar, modelar, analisar e apresentar um dashboard executivo que a diretoria consiga usar.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#missao">Começar o desafio</a>
+          <a class="button ghost" href="downloads/gerador-horizonte.zip" download>Baixar gerador <span>↓</span></a>
+        </div>
+        <dl class="hero-stats" aria-label="Resumo do desafio">
+          <div><dt>10</dt><dd>hotéis</dd></div>
+          <div><dt>24</dt><dd>meses</dd></div>
+          <div><dt>7</dt><dd>tabelas</dd></div>
+          <div><dt>1</dt><dd>dashboard final</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section intro" id="missao">
+      <div class="wrap split-heading">
+        <div>
+          <p class="eyebrow coral">01 · O CASO</p>
+          <h2>A diretoria não quer gráficos.<br>Quer respostas.</h2>
+        </div>
+        <div class="lead-block">
+          <p>A Horizonte Hotéis &amp; Resorts opera unidades de praia, serra, ecoturismo e negócios. Os dados vieram de PMS, OTAs e controles internos — e não conversam perfeitamente entre si.</p>
+          <p>Você integra o time de Analytics contratado para descobrir onde a rede ganha receita, onde perde eficiência e quais hotéis precisam de ação imediata.</p>
+        </div>
+      </div>
+      <div class="wrap brief-grid">
+        <article class="brief-card featured">
+          <span class="card-number">O briefing</span>
+          <h3>“Como crescer receita sem sacrificar ocupação, experiência e eficiência operacional?”</h3>
+          <p>O dashboard deve sustentar uma recomendação executiva, não apenas descrever o passado.</p>
+        </article>
+        <article class="brief-card">
+          <span class="icon-chip" aria-hidden="true">↗</span>
+          <h3>Receita</h3>
+          <p>ADR, RevPAR, diária vendida, extras, canal e comissão.</p>
+        </article>
+        <article class="brief-card">
+          <span class="icon-chip" aria-hidden="true">◎</span>
+          <h3>Operação</h3>
+          <p>Ocupação, sazonalidade, cancelamento, no-show e lead time.</p>
+        </article>
+        <article class="brief-card">
+          <span class="icon-chip" aria-hidden="true">✓</span>
+          <h3>Experiência</h3>
+          <p>SLA de manutenção, avaliação, fidelidade e perfil de hóspede.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section data-section" id="dados">
+      <div class="wrap">
+        <p class="eyebrow sand">02 · O QUE VOCÊ RECEBE</p>
+        <div class="section-title-row">
+          <h2>O mesmo negócio em três níveis de dificuldade.</h2>
+          <p>O professor escolhe a versão conforme o nível da turma. A versão perfeita serve como gabarito de validação.</p>
+        </div>
+        <div class="version-grid">
+          <article class="version-card">
+            <span class="version-tag">V1 · INICIANTE</span>
+            <h3>Tabela única com erros</h3>
+            <p>Uma visão desnormalizada por reserva. Ideal para o primeiro contato com Power Query.</p>
+            <ul>
+              <li>1 arquivo CSV</li>
+              <li>Consumos extras agregados</li>
+              <li>Datas, textos e duplicatas</li>
+            </ul>
+          </article>
+          <article class="version-card recommended">
+            <span class="version-tag">V2 · RECOMENDADA</span>
+            <h3>Modelo normalizado com erros</h3>
+            <p>Sete tabelas para limpar, relacionar e transformar em modelo analítico.</p>
+            <ul>
+              <li>7 arquivos CSV</li>
+              <li>Chaves e grãos distintos</li>
+              <li>Sujeira realista de PMS/OTA</li>
+            </ul>
+          </article>
+          <article class="version-card">
+            <span class="version-tag">V3 · GABARITO</span>
+            <h3>Modelo perfeito</h3>
+            <p>Base validada, sem duplicatas ou inconsistências, para conferir números e relações.</p>
+            <ul>
+              <li>7 arquivos CSV limpos</li>
+              <li>FKs íntegras</li>
+              <li>Sem reservas sobrepostas</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="download-panel">
+          <div>
+            <p class="eyebrow">GERAÇÃO REPRODUZÍVEL</p>
+            <h3>Gere sua própria base em poucos minutos.</h3>
+            <p>Execute o script na pasta do projeto. Ele cria as três versões e um guia técnico com regras, erros plantados e sugestões DAX.</p>
+          </div>
+          <div class="terminal" role="group" aria-label="Comandos para gerar a base">
+            <div class="terminal-head"><span></span><span></span><span></span><button class="copy-button" data-copy="python -m pip install -r requirements.txt&#10;python gerador_hotelaria_horizonte.py">Copiar</button></div>
+            <pre><code>python -m pip install -r requirements.txt
+python gerador_hotelaria_horizonte.py</code></pre>
+          </div>
+          <div class="download-links">
+            <a href="downloads/gerador-horizonte.zip" download><strong>Gerador completo</strong><span>Python + dependências · ZIP ↓</span></a>
+            <a href="downloads/base-v1-iniciante.zip" download><strong>Base V1</strong><span>Tabela única · ZIP ↓</span></a>
+            <a href="downloads/base-v2-desafio.zip" download><strong>Base V2</strong><span>7 tabelas com erros · ZIP ↓</span></a>
+            <a href="downloads/DICAS_POWERBI.md" download><strong>Guia Power BI</strong><span>Limpeza + DAX · MD ↓</span></a>
+            <a href="assets/tema-horizonte.json" download><strong>Tema Power BI</strong><span>Paleta Horizonte · JSON ↓</span></a>
+          </div>
+        </div>
+
+        <div class="schema" aria-label="Modelo de dados sugerido">
+          <div class="schema-copy">
+            <p class="eyebrow coral">MODELO SUGERIDO</p>
+            <h3>Duas operações, dois grãos.</h3>
+            <p>Reservas e consumos não têm o mesmo nível de detalhe. Preserve os fatos separados e deixe as dimensões filtrarem a análise.</p>
+            <p class="tip"><strong>Pergunta-guia:</strong> se você somar a diária depois de juntar cada consumo, a receita de hospedagem será duplicada?</p>
+          </div>
+          <div class="schema-map">
+            <span class="table dim">hotéis</span>
+            <span class="relation">1 → N</span>
+            <span class="table dim">quartos</span>
+            <span class="relation">1 → N</span>
+            <span class="table fact">reservas</span>
+            <span class="relation down">↓ 1 → N</span>
+            <span class="table fact extras">consumos extras</span>
+            <span class="table dim guest">hóspedes</span>
+            <span class="relation guest-line">N → 1</span>
+            <span class="table fact calls">chamados</span>
+            <span class="relation staff-line">N → 1</span>
+            <span class="table dim staff">funcionários</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section journey" id="jornada">
+      <div class="wrap">
+        <p class="eyebrow coral">03 · SUA JORNADA</p>
+        <h2>Do arquivo bruto à sala da diretoria.</h2>
+        <p class="section-lead">Siga as etapas na ordem. Cada uma produz uma evidência que fará parte da entrega final.</p>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="step">01</span>
+            <div><p class="duration">45–60 min</p><h3>Reconhecer</h3><p>Entenda o caso, identifique o grão de cada tabela e registre cinco problemas de qualidade.</p><strong>Evidência: diagnóstico inicial</strong></div>
+          </article>
+          <article class="timeline-item">
+            <span class="step">02</span>
+            <div><p class="duration">90–120 min</p><h3>Limpar</h3><p>Padronize datas, moeda, categorias e chaves; trate duplicatas e check-ins invertidos.</p><strong>Evidência: consultas no Power Query</strong></div>
+          </article>
+          <article class="timeline-item">
+            <span class="step">03</span>
+            <div><p class="duration">60–90 min</p><h3>Modelar</h3><p>Crie calendário, comissões por canal e relacionamentos 1:N com direção de filtro consciente.</p><strong>Evidência: esquema estrela</strong></div>
+          </article>
+          <article class="timeline-item">
+            <span class="step">04</span>
+            <div><p class="duration">90–120 min</p><h3>Calcular</h3><p>Construa medidas de receita, ocupação, ADR, RevPAR, cancelamento, no-show e SLA.</p><strong>Evidência: tabela _Medidas</strong></div>
+          </article>
+          <article class="timeline-item">
+            <span class="step">05</span>
+            <div><p class="duration">120 min</p><h3>Contar a história</h3><p>Monte quatro páginas, destaque anomalias e termine com três recomendações acionáveis.</p><strong>Evidência: dashboard final</strong></div>
+          </article>
+        </div>
+
+        <div class="cleaning-lab">
+          <div>
+            <p class="eyebrow sand">LABORATÓRIO DE LIMPEZA</p>
+            <h3>Não “corrija” sem explicar.</h3>
+            <p>Para cada transformação, documente: problema observado, regra aplicada e impacto esperado. Limpeza é uma decisão de negócio.</p>
+          </div>
+          <div class="before-after">
+            <div><span>ANTES</span><code>" OTA - BookNow "</code><code>"31.12.24"</code><code>"R$ 842,50"</code><code>QRT-00841␠</code></div>
+            <div class="arrow" aria-hidden="true">→</div>
+            <div><span>DEPOIS</span><code>"OTA BookNow"</code><code>31/12/2024</code><code>842,50</code><code>QRT-00841</code></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dax-section" id="medidas">
+      <div class="wrap">
+        <div class="section-title-row">
+          <div><p class="eyebrow sand">04 · MEDIDAS ESSENCIAIS</p><h2>Comece simples. Depois pense como hotelaria.</h2></div>
+          <p>Medida boa responde uma pergunta e respeita o contexto de filtro. Evite colunas calculadas para tudo.</p>
+        </div>
+        <div class="dax-grid">
+          <article class="dax-card">
+            <div><span>Receita</span><button class="copy-button" data-copy="Receita Hospedagem =&#10;SUMX(&#10;  FILTER(reservas, reservas[Status_Reserva] IN {\"Check-out Realizado\", \"Hospedado\"}),&#10;  reservas[Noites] * reservas[Diaria_Media_Cobrada]&#10;)">Copiar DAX</button></div>
+            <pre><code><b>Receita Hospedagem</b> =
+SUMX(
+  FILTER(reservas,
+    reservas[Status_Reserva] IN
+    {"Check-out Realizado", "Hospedado"}),
+  reservas[Noites] * reservas[Diaria_Media_Cobrada]
+)</code></pre>
+          </article>
+          <article class="dax-card">
+            <div><span>Revenue management</span><button class="copy-button" data-copy="ADR = DIVIDE([Receita Hospedagem], [Diárias Vendidas])&#10;&#10;RevPAR = DIVIDE([Receita Hospedagem], [Diárias Disponíveis])">Copiar DAX</button></div>
+            <pre><code><b>ADR</b> = DIVIDE(
+  [Receita Hospedagem],
+  [Diárias Vendidas]
+)
+
+<b>RevPAR</b> = DIVIDE(
+  [Receita Hospedagem],
+  [Diárias Disponíveis]
+)</code></pre>
+          </article>
+          <article class="dax-card">
+            <div><span>Qualidade operacional</span><button class="copy-button" data-copy="% SLA Cumprido =&#10;DIVIDE(&#10;  CALCULATE(COUNTROWS(chamados_manutencao), chamados_manutencao[Horas_Resolucao] <= chamados_manutencao[SLA_Horas]),&#10;  COUNTROWS(chamados_manutencao)&#10;)">Copiar DAX</button></div>
+            <pre><code><b>% SLA Cumprido</b> =
+DIVIDE(
+  CALCULATE(COUNTROWS(chamados),
+    chamados[Horas_Resolucao] &lt;=
+    chamados[SLA_Horas]),
+  COUNTROWS(chamados)
+)</code></pre>
+          </article>
+        </div>
+        <p class="note">Atenção: <strong>ocupação é semi-aditiva.</strong> Contar reservas por mês não representa corretamente noites que atravessam períodos. Use interseção entre check-in/check-out e o intervalo filtrado.</p>
+      </div>
+    </section>
+
+    <section class="section dashboard-section" id="dashboard">
+      <div class="wrap">
+        <p class="eyebrow coral">05 · O DASHBOARD</p>
+        <h2>Quatro páginas. Uma narrativa executiva.</h2>
+        <div class="page-grid">
+          <article class="page-card"><span>01</span><h3>Visão Executiva</h3><p>Ocupação, ADR, RevPAR, receita, cancelamento e variação contra período anterior.</p><small>Pergunta: onde estamos e o que exige atenção?</small></article>
+          <article class="page-card"><span>02</span><h3>Receita &amp; Canais</h3><p>Receita bruta e líquida, comissões, bandeiras, hotéis, diária e consumos extras.</p><small>Pergunta: de onde vem o resultado?</small></article>
+          <article class="page-card"><span>03</span><h3>Ocupação &amp; Demanda</h3><p>Sazonalidade, lead time, mapa, dia da semana, tipos de quarto e cancelamentos.</p><small>Pergunta: quando e por que a demanda muda?</small></article>
+          <article class="page-card"><span>04</span><h3>Operação &amp; Experiência</h3><p>Chamados, SLA, avaliação, fidelidade e ranking de unidades.</p><small>Pergunta: onde a operação afeta o hóspede?</small></article>
+        </div>
+        <div class="visual-rules">
+          <h3>Regras de design que valem ponto</h3>
+          <div><p><strong>1 cor de destaque</strong><br>Cor deve ter significado.</p><p><strong>Até 8 visuais</strong><br>Por página; dê espaço ao dado.</p><p><strong>Títulos com conclusão</strong><br>“RevPAR cai 12%”, não “RevPAR por mês”.</p><p><strong>Contexto sempre</strong><br>Compare com meta, período ou benchmark.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section insight-section">
+      <div class="wrap split-heading">
+        <div><p class="eyebrow sand">06 · PERGUNTAS PARA INVESTIGAR</p><h2>Não aceite o primeiro número.</h2></div>
+        <div class="question-list">
+          <details open><summary>O hotel com maior ocupação também tem o melhor RevPAR?</summary><p>Compare volume e preço. Alta ocupação com ADR baixo pode esconder oportunidade de tarifa.</p></details>
+          <details><summary>As OTAs trazem receita ou apenas volume?</summary><p>Considere a comissão de 15%–18% antes de comparar os canais.</p></details>
+          <details><summary>Praia, serra e urbano obedecem à mesma sazonalidade?</summary><p>Construa um heatmap por mês e dia da semana. Procure padrões que se invertem.</p></details>
+          <details><summary>SLA ruim aparece na avaliação do hóspede?</summary><p>Separe chamados dentro e fora do prazo e compare as distribuições de nota.</p></details>
+          <details><summary>Hóspedes fiéis geram mais valor líquido?</summary><p>Compare frequência, desconto, ticket de extras e receita por nível de fidelidade.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section delivery" id="entrega">
+      <div class="wrap">
+        <p class="eyebrow coral">07 · ENTREGA FINAL</p>
+        <h2>O que precisa estar pronto.</h2>
+        <p class="section-lead">Marque os itens conforme avançar. O progresso fica salvo neste navegador.</p>
+        <div class="delivery-layout">
+          <div class="checklist" id="checklist">
+            <label><input type="checkbox" data-task="pbix"><span><strong>Arquivo .PBIX</strong> com quatro páginas nomeadas e navegáveis.</span></label>
+            <label><input type="checkbox" data-task="query"><span><strong>Power Query documentado</strong> com etapas legíveis e tipos corretos.</span></label>
+            <label><input type="checkbox" data-task="model"><span><strong>Modelo de dados</strong> com calendário, relações corretas e sem ambiguidade.</span></label>
+            <label><input type="checkbox" data-task="dax"><span><strong>Medidas DAX</strong> organizadas em uma tabela exclusiva.</span></label>
+            <label><input type="checkbox" data-task="insights"><span><strong>Três insights</strong> escritos em linguagem executiva e sustentados por dados.</span></label>
+            <label><input type="checkbox" data-task="actions"><span><strong>Três recomendações</strong> com ação, responsável sugerido e impacto esperado.</span></label>
+            <label><input type="checkbox" data-task="readme"><span><strong>Resumo de uma página</strong> com decisões, limitações e próximos passos.</span></label>
+          </div>
+          <aside class="score-card">
+            <p>SEU PROGRESSO</p>
+            <strong id="progressValue">0%</strong>
+            <div class="progress-track"><span id="taskProgress"></span></div>
+            <small id="progressMessage">Comece pelo diagnóstico da base.</small>
+            <hr>
+            <h3>Rubrica · 100 pontos</h3>
+            <dl><div><dt>ETL e qualidade</dt><dd>25</dd></div><div><dt>Modelagem</dt><dd>20</dd></div><div><dt>DAX e validação</dt><dd>25</dd></div><div><dt>Design e usabilidade</dt><dd>15</dd></div><div><dt>Insights e defesa</dt><dd>15</dd></div></dl>
+          </aside>
+        </div>
+        <div class="final-callout">
+          <span aria-hidden="true">→</span>
+          <div><p>CRITÉRIO DE SUCESSO</p><h3>Uma pessoa da diretoria deve entender o problema, explorar o resultado e decidir o próximo passo em até cinco minutos.</h3></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <div class="brand footer-brand"><span class="brand-mark">H</span><span><strong>Horizonte</strong><small>Hotéis &amp; Resorts</small></span></div>
+      <p>Projeto educacional fictício para prática de Power BI.<br>Dados sintéticos; nenhuma empresa ou pessoa real é representada.</p>
+      <a href="#inicio">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite">Copiado para a área de transferência.</div>
+  <script src="script.js" defer></script>
+</body>
+</html>
