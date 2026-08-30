@@ -2,6 +2,8 @@
 
 Projeto educacional completo para conduzir alunos do dado bruto a um dashboard executivo de hotelaria no Power BI.
 
+**Site publicado:** https://profmv.github.io/kit-horizonte-hoteis/
+
 ## Estrutura
 
 - `index.html`, `styles.css`, `script.js`: site estático compatível com GitHub Pages.
