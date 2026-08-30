@@ -21,7 +21,7 @@
     </a>
     <button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="mainNav">Menu</button>
     <nav id="mainNav" aria-label="Navegação do glossário">
-      <a href="#ferramentas">Ferramentas</a>
+      <a href="#dados">Dados</a>
       <a href="#modelagem">Modelagem</a>
       <a href="#calculos">Cálculos</a>
       <a href="#hotelaria">Hotelaria</a>
@@ -47,7 +47,6 @@
       <div class="wrap glossary-layout">
         <aside class="glossary-index" aria-label="Categorias do glossário">
           <strong>Nesta página</strong>
-          <a href="#ferramentas">Ferramentas e arquivos</a>
           <a href="#dados">Preparação de dados</a>
           <a href="#modelagem">Modelagem</a>
           <a href="#calculos">Cálculos</a>
@@ -58,37 +57,8 @@
         <div class="glossary-groups">
           <p class="glossary-empty" id="glossaryEmpty" hidden>Nenhum termo encontrado. Tente outra palavra.</p>
 
-          <section class="glossary-group" id="ferramentas">
-            <div class="glossary-group-title"><span>01</span><h2>Ferramentas e arquivos</h2></div>
-
-            <details class="glossary-card" id="power-bi">
-              <summary><span>Power BI</span><small>Ferramenta</small></summary>
-              <div><p>Plataforma da Microsoft para conectar dados, transformá-los, criar modelos, escrever cálculos e montar relatórios interativos.</p><dl><div><dt>No projeto</dt><dd>É onde você importará os CSVs da Horizonte e produzirá o dashboard final.</dd></div><div><dt>Partes usadas</dt><dd>Power Query, Modelo, DAX e páginas do Relatório.</dd></div></dl></div>
-            </details>
-
-            <details class="glossary-card" id="csv">
-              <summary><span>CSV</span><small>Arquivo de dados</small></summary>
-              <div><p>Arquivo de texto tabular. Cada linha representa um registro e os campos são separados por um caractere — neste projeto, ponto e vírgula.</p><dl><div><dt>No projeto</dt><dd>Cada tabela da V2 chega como um CSV separado.</dd></div><div><dt>Ao importar</dt><dd>Use delimitador <code>;</code>, codificação UTF-8 e localidade Português (Brasil).</dd></div></dl></div>
-            </details>
-
-            <details class="glossary-card" id="zip">
-              <summary><span>ZIP</span><small>Arquivo compactado</small></summary>
-              <div><p>Pacote que reduz o tamanho e reúne vários arquivos em um único download.</p><dl><div><dt>No projeto</dt><dd>As bases V1 e V2 são entregues em ZIP.</dd></div><div><dt>Antes do Power BI</dt><dd>Extraia o conteúdo para uma pasta estável; não conecte aos arquivos ainda compactados.</dd></div></dl></div>
-            </details>
-
-            <details class="glossary-card" id="json">
-              <summary><span>JSON</span><small>Arquivo de configuração</small></summary>
-              <div><p>Formato textual estruturado por pares de nome e valor. É comum em configurações e integrações.</p><dl><div><dt>No projeto</dt><dd>O arquivo de tema define as cores principais da rede Horizonte.</dd></div><div><dt>Como usar</dt><dd>No Power BI: Exibição → Temas → Procurar temas.</dd></div></dl></div>
-            </details>
-
-            <details class="glossary-card" id="pbix">
-              <summary><span>PBIX</span><small>Arquivo do Power BI</small></summary>
-              <div><p>Arquivo criado pelo Power BI Desktop. Guarda consultas, modelo, medidas, visuais e configurações do relatório.</p><dl><div><dt>No projeto</dt><dd>É o principal arquivo que o aluno deve entregar.</dd></div><div><dt>Boa prática</dt><dd>Use um nome com versão e mantenha uma cópia antes de mudanças grandes.</dd></div></dl></div>
-            </details>
-          </section>
-
           <section class="glossary-group" id="dados">
-            <div class="glossary-group-title"><span>02</span><h2>Origem e preparação dos dados</h2></div>
+            <div class="glossary-group-title"><span>01</span><h2>Origem e preparação dos dados</h2></div>
 
             <details class="glossary-card" id="pms">
               <summary><span>PMS</span><small>Sistema hoteleiro</small></summary>
@@ -117,7 +87,7 @@
           </section>
 
           <section class="glossary-group" id="modelagem">
-            <div class="glossary-group-title"><span>03</span><h2>Modelagem</h2></div>
+            <div class="glossary-group-title"><span>02</span><h2>Modelagem</h2></div>
 
             <details class="glossary-card" id="grao">
               <summary><span>Grão</span><small>Nível de detalhe</small></summary>
@@ -126,12 +96,12 @@
 
             <details class="glossary-card" id="pk">
               <summary><span>PK · Chave primária</span><small>Identificação</small></summary>
-              <div><p>Coluna — ou conjunto de colunas — que identifica cada linha de uma tabela sem duplicação.</p><dl><div><dt>No projeto</dt><dd><code>Reserva_ID</code> identifica uma reserva; <code>Hotel_ID</code> identifica um hotel.</dd></div><div><dt>Validação</dt><dd>No lado “1” de uma relação, a PK deve ser única e não vazia.</dd></div></dl></div>
+              <div><p>PK vem de <em>Primary Key</em>: coluna — ou conjunto de colunas — que identifica cada linha de uma tabela sem duplicação.</p><dl><div><dt>No projeto</dt><dd><code>Reserva_ID</code> identifica uma reserva; <code>Hotel_ID</code> identifica um hotel.</dd></div><div><dt>Validação</dt><dd>No lado “1” de uma relação, a PK deve ser única e não vazia.</dd></div></dl></div>
             </details>
 
             <details class="glossary-card" id="fk">
               <summary><span>FK · Chave estrangeira</span><small>Ligação</small></summary>
-              <div><p>Coluna que guarda o identificador de uma linha existente em outra tabela.</p><dl><div><dt>No projeto</dt><dd><code>reservas[Hospede_ID]</code> aponta para <code>hospedes[Hospede_ID]</code>.</dd></div><div><dt>Validação</dt><dd>Uma FK sem correspondência cria linha órfã e pode aparecer como “(Em branco)” no relatório.</dd></div></dl></div>
+              <div><p>FK vem de <em>Foreign Key</em>: coluna que guarda o identificador de uma linha existente em outra tabela.</p><dl><div><dt>No projeto</dt><dd><code>reservas[Hospede_ID]</code> aponta para <code>hospedes[Hospede_ID]</code>.</dd></div><div><dt>Validação</dt><dd>Uma FK sem correspondência cria linha órfã e pode aparecer como “(Em branco)” no relatório.</dd></div></dl></div>
             </details>
 
             <details class="glossary-card" id="cardinalidade">
@@ -166,7 +136,7 @@
           </section>
 
           <section class="glossary-group" id="calculos">
-            <div class="glossary-group-title"><span>04</span><h2>Cálculos no Power BI</h2></div>
+            <div class="glossary-group-title"><span>03</span><h2>Cálculos no Power BI</h2></div>
 
             <details class="glossary-card" id="dax">
               <summary><span>DAX</span><small>Linguagem de fórmulas</small></summary>
@@ -195,7 +165,7 @@
           </section>
 
           <section class="glossary-group" id="hotelaria">
-            <div class="glossary-group-title"><span>05</span><h2>Indicadores de hotelaria</h2></div>
+            <div class="glossary-group-title"><span>04</span><h2>Indicadores de hotelaria</h2></div>
 
             <details class="glossary-card" id="diarias-vendidas">
               <summary><span>Diárias vendidas</span><small>Volume</small></summary>
@@ -279,7 +249,7 @@
           </section>
 
           <section class="glossary-group" id="analise">
-            <div class="glossary-group-title"><span>06</span><h2>Análise e entrega</h2></div>
+            <div class="glossary-group-title"><span>05</span><h2>Análise e entrega</h2></div>
 
             <details class="glossary-card" id="analytics">
               <summary><span>Analytics</span><small>Uso dos dados</small></summary>
@@ -301,10 +271,6 @@
               <div><p>Conclusão relevante obtida dos dados que explica um comportamento ou revela uma oportunidade.</p><dl><div><dt>No projeto</dt><dd>Entregue pelo menos três insights sustentados por medidas e visuais.</dd></div><div><dt>Boa formulação</dt><dd>Diga o que aconteceu, onde, quanto mudou e por que isso merece ação.</dd></div></dl></div>
             </details>
 
-            <details class="glossary-card" id="dashboard">
-              <summary><span>Dashboard</span><small>Painel de decisão</small></summary>
-              <div><p>Conjunto organizado de indicadores e visuais que permite acompanhar desempenho e investigar causas.</p><dl><div><dt>No projeto</dt><dd>O produto final terá quatro páginas: executiva, receita, demanda e operação.</dd></div><div><dt>Critério</dt><dd>Uma pessoa deve entender o problema e decidir o próximo passo em até cinco minutos.</dd></div></dl></div>
-            </details>
           </section>
         </div>
       </div>
