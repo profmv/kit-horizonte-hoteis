@@ -6,7 +6,7 @@ Projeto educacional completo para conduzir alunos do dado bruto a um dashboard e
 
 ## Estrutura
 
-- `index.html`, `styles.css`, `script.js`: site estático compatível com GitHub Pages.
+- `docs/`: site estático publicado no GitHub Pages; contém apenas os dados e materiais destinados aos alunos.
 - `gerador_hotelaria_horizonte.py`: fonte da verdade do dataset sintético.
 - `nomes_data.py`: listas auxiliares usadas pelo gerador.
 - `dataset_horizonte_hoteis/`: três versões da base e guia Power BI, criados pelo gerador.
@@ -25,17 +25,17 @@ O script é determinístico (`SEED=42`) e exporta CSV com separador `;` e codifi
 
 ## Abrir o site localmente
 
-O site não precisa de build. Abra `index.html` ou use um servidor local:
+O site não precisa de build. Abra `docs/index.html` ou use um servidor local:
 
 ```powershell
-python -m http.server 8000
+python -m http.server 8000 --directory docs
 ```
 
 Depois acesse `http://localhost:8000`.
 
 ## Publicar no GitHub Pages
 
-Em **Settings → Pages**, selecione **Deploy from a branch**, branch `main` e pasta `/ (root)`. O arquivo `.nojekyll` evita processamento desnecessário.
+Em **Settings → Pages**, selecione **Deploy from a branch**, branch `main` e pasta `/docs`. O arquivo `.nojekyll` evita processamento desnecessário.
 
 ## Entrega esperada do aluno
 
