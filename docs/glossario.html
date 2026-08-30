@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Glossário de Power BI, modelagem de dados e indicadores de hotelaria do projeto Horizonte Hotéis.">
+  <meta name="theme-color" content="#092f38">
+  <title>Glossário — Horizonte Hotéis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="glossary-page">
+  <a class="skip-link" href="#glossario">Pular para o glossário</a>
+  <div class="reading-progress" aria-hidden="true"><span id="readingBar"></span></div>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Horizonte Hotéis — voltar ao projeto">
+      <span class="brand-mark" aria-hidden="true">H</span>
+      <span><strong>Horizonte</strong><small>Hotéis &amp; Resorts</small></span>
+    </a>
+    <button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="mainNav">Menu</button>
+    <nav id="mainNav" aria-label="Navegação do glossário">
+      <a href="#ferramentas">Ferramentas</a>
+      <a href="#modelagem">Modelagem</a>
+      <a href="#calculos">Cálculos</a>
+      <a href="#hotelaria">Hotelaria</a>
+      <a href="index.html">← Projeto</a>
+    </nav>
+    <button class="theme-button" id="themeButton" type="button" aria-label="Alternar tema">◐</button>
+  </header>
+
+  <main id="glossario">
+    <section class="glossary-hero">
+      <div class="wrap">
+        <p class="eyebrow sand">GLOSSÁRIO DO PROJETO</p>
+        <h1>Entenda o termo.<br><em>Aplique no painel.</em></h1>
+        <p>Cada definição explica o conceito, onde ele aparece na atividade e como usá-lo no Power BI.</p>
+        <label class="glossary-search">
+          <span>Buscar termo ou assunto</span>
+          <input id="glossarySearch" type="search" placeholder="Ex.: RevPAR, relacionamento, Power Query…" autocomplete="off">
+        </label>
+      </div>
+    </section>
+
+    <section class="section glossary-content">
+      <div class="wrap glossary-layout">
+        <aside class="glossary-index" aria-label="Categorias do glossário">
+          <strong>Nesta página</strong>
+          <a href="#ferramentas">Ferramentas e arquivos</a>
+          <a href="#dados">Preparação de dados</a>
+          <a href="#modelagem">Modelagem</a>
+          <a href="#calculos">Cálculos</a>
+          <a href="#hotelaria">Indicadores de hotelaria</a>
+          <a href="#analise">Análise e entrega</a>
+        </aside>
+
+        <div class="glossary-groups">
+          <p class="glossary-empty" id="glossaryEmpty" hidden>Nenhum termo encontrado. Tente outra palavra.</p>
+
+          <section class="glossary-group" id="ferramentas">
+            <div class="glossary-group-title"><span>01</span><h2>Ferramentas e arquivos</h2></div>
+
+            <details class="glossary-card" id="power-bi">
+              <summary><span>Power BI</span><small>Ferramenta</small></summary>
+              <div><p>Plataforma da Microsoft para conectar dados, transformá-los, criar modelos, escrever cálculos e montar relatórios interativos.</p><dl><div><dt>No projeto</dt><dd>É onde você importará os CSVs da Horizonte e produzirá o dashboard final.</dd></div><div><dt>Partes usadas</dt><dd>Power Query, Modelo, DAX e páginas do Relatório.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="csv">
+              <summary><span>CSV</span><small>Arquivo de dados</small></summary>
+              <div><p>Arquivo de texto tabular. Cada linha representa um registro e os campos são separados por um caractere — neste projeto, ponto e vírgula.</p><dl><div><dt>No projeto</dt><dd>Cada tabela da V2 chega como um CSV separado.</dd></div><div><dt>Ao importar</dt><dd>Use delimitador <code>;</code>, codificação UTF-8 e localidade Português (Brasil).</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="zip">
+              <summary><span>ZIP</span><small>Arquivo compactado</small></summary>
+              <div><p>Pacote que reduz o tamanho e reúne vários arquivos em um único download.</p><dl><div><dt>No projeto</dt><dd>As bases V1 e V2 são entregues em ZIP.</dd></div><div><dt>Antes do Power BI</dt><dd>Extraia o conteúdo para uma pasta estável; não conecte aos arquivos ainda compactados.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="json">
+              <summary><span>JSON</span><small>Arquivo de configuração</small></summary>
+              <div><p>Formato textual estruturado por pares de nome e valor. É comum em configurações e integrações.</p><dl><div><dt>No projeto</dt><dd>O arquivo de tema define as cores principais da rede Horizonte.</dd></div><div><dt>Como usar</dt><dd>No Power BI: Exibição → Temas → Procurar temas.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="pbix">
+              <summary><span>PBIX</span><small>Arquivo do Power BI</small></summary>
+              <div><p>Arquivo criado pelo Power BI Desktop. Guarda consultas, modelo, medidas, visuais e configurações do relatório.</p><dl><div><dt>No projeto</dt><dd>É o principal arquivo que o aluno deve entregar.</dd></div><div><dt>Boa prática</dt><dd>Use um nome com versão e mantenha uma cópia antes de mudanças grandes.</dd></div></dl></div>
+            </details>
+          </section>
+
+          <section class="glossary-group" id="dados">
+            <div class="glossary-group-title"><span>02</span><h2>Origem e preparação dos dados</h2></div>
+
+            <details class="glossary-card" id="pms">
+              <summary><span>PMS</span><small>Sistema hoteleiro</small></summary>
+              <div><p><em>Property Management System</em>: sistema que controla reservas, check-in, check-out, quartos, hóspedes e parte da operação de um hotel.</p><dl><div><dt>No projeto</dt><dd>Explica por que reservas, hóspedes e quartos possuem identificadores próprios.</dd></div><div><dt>Problema simulado</dt><dd>Cadastros e datas podem chegar com padrões diferentes após integrações.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="ota">
+              <summary><span>OTA</span><small>Canal de venda</small></summary>
+              <div><p><em>Online Travel Agency</em>: plataforma que vende hospedagens pela internet, como os canais fictícios BookNow e ViajaMais.</p><dl><div><dt>No projeto</dt><dd>A OTA traz reservas, mas cobra comissão.</dd></div><div><dt>Análise</dt><dd>Compare volume, receita bruta e receita líquida por canal.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="power-query">
+              <summary><span>Power Query</span><small>Preparação de dados</small></summary>
+              <div><p>Editor de importação e transformação do Power BI. Cada ação vira uma etapa reproduzível da consulta.</p><dl><div><dt>No projeto</dt><dd>Serve para padronizar textos e datas, remover duplicatas e criar colunas auxiliares.</dd></div><div><dt>Boa prática</dt><dd>Nomeie etapas pela regra aplicada e preserve os dados brutos na origem.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="etl">
+              <summary><span>ETL</span><small>Processo de dados</small></summary>
+              <div><p><em>Extract, Transform, Load</em>: extrair dados da origem, transformá-los e carregá-los no destino analítico.</p><dl><div><dt>No projeto</dt><dd>Extrair os CSVs, limpar no Power Query e carregar no modelo do Power BI.</dd></div><div><dt>Objetivo</dt><dd>Fazer o mesmo tratamento ser repetido a cada atualização.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="modelo-normalizado">
+              <summary><span>Modelo normalizado</span><small>Organização da origem</small></summary>
+              <div><p>Estrutura que separa assuntos em tabelas para evitar repetição e inconsistências. Um hóspede, por exemplo, é cadastrado uma vez e referenciado nas reservas.</p><dl><div><dt>No projeto</dt><dd>A V2 traz sete tabelas separadas.</dd></div><div><dt>Próximo passo</dt><dd>Organize-as para análise, respeitando chaves, grãos e relações.</dd></div></dl></div>
+            </details>
+          </section>
+
+          <section class="glossary-group" id="modelagem">
+            <div class="glossary-group-title"><span>03</span><h2>Modelagem</h2></div>
+
+            <details class="glossary-card" id="grao">
+              <summary><span>Grão</span><small>Nível de detalhe</small></summary>
+              <div><p>Define o que uma linha representa. Antes de calcular qualquer coisa, você precisa saber se a linha é uma reserva, uma noite, um consumo ou um chamado.</p><dl><div><dt>No projeto</dt><dd><code>reservas</code> tem uma linha por estadia; <code>consumos_extras</code>, uma por lançamento.</dd></div><div><dt>Risco</dt><dd>Juntar grãos diferentes pode duplicar receita.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="pk">
+              <summary><span>PK · Chave primária</span><small>Identificação</small></summary>
+              <div><p>Coluna — ou conjunto de colunas — que identifica cada linha de uma tabela sem duplicação.</p><dl><div><dt>No projeto</dt><dd><code>Reserva_ID</code> identifica uma reserva; <code>Hotel_ID</code> identifica um hotel.</dd></div><div><dt>Validação</dt><dd>No lado “1” de uma relação, a PK deve ser única e não vazia.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="fk">
+              <summary><span>FK · Chave estrangeira</span><small>Ligação</small></summary>
+              <div><p>Coluna que guarda o identificador de uma linha existente em outra tabela.</p><dl><div><dt>No projeto</dt><dd><code>reservas[Hospede_ID]</code> aponta para <code>hospedes[Hospede_ID]</code>.</dd></div><div><dt>Validação</dt><dd>Uma FK sem correspondência cria linha órfã e pode aparecer como “(Em branco)” no relatório.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="cardinalidade">
+              <summary><span>Cardinalidade</span><small>Regra da relação</small></summary>
+              <div><p>Indica quantas linhas de uma tabela podem se relacionar com linhas da outra: um-para-um, um-para-muitos ou muitos-para-muitos.</p><dl><div><dt>No projeto</dt><dd>Um hotel possui muitos quartos; um quarto pertence a um hotel.</dd></div><div><dt>Alerta</dt><dd>Muitos-para-muitos costuma indicar chave duplicada ou modelagem ainda não resolvida.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="relacao-1-n">
+              <summary><span>Relacionamento 1:N</span><small>Um-para-muitos</small></summary>
+              <div><p>Uma linha do lado “1” pode estar associada a várias linhas do lado “N”. O lado “1” precisa ter valores únicos.</p><dl><div><dt>No projeto</dt><dd><code>hoteis 1 → N quartos</code> e <code>reservas 1 → N consumos_extras</code>.</dd></div><div><dt>Filtro</dt><dd>Prefira a direção do lado descritivo para o lado dos eventos.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="dimensao">
+              <summary><span>Dimensão</span><small>Tabela descritiva</small></summary>
+              <div><p>Tabela com atributos usados para filtrar, agrupar ou detalhar os resultados.</p><dl><div><dt>No projeto</dt><dd>Hotéis, Quartos, Hóspedes e Funcionários funcionam como dimensões.</dd></div><div><dt>Exemplo</dt><dd>Receita por cidade usa uma dimensão para explicar uma medida da tabela fato.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="fato">
+              <summary><span>Fato</span><small>Tabela de eventos</small></summary>
+              <div><p>Tabela que registra eventos mensuráveis e geralmente contém datas, chaves estrangeiras e valores numéricos.</p><dl><div><dt>No projeto</dt><dd>Reservas, Consumos Extras e Chamados são fatos com grãos diferentes.</dd></div><div><dt>Boa prática</dt><dd>Não una fatos apenas para reduzir o número de tabelas.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="esquema-estrela">
+              <summary><span>Esquema estrela</span><small>Modelo analítico</small></summary>
+              <div><p>Organização em que dimensões ficam ao redor de tabelas fato, criando caminhos de filtro simples e previsíveis.</p><dl><div><dt>No projeto</dt><dd>Dimensões descrevem as reservas, consumos e chamados sem repetir atributos em cada evento.</dd></div><div><dt>Benefício</dt><dd>Medidas mais claras, melhor desempenho e menos ambiguidade.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="ambiguidade">
+              <summary><span>Ambiguidade no modelo</span><small>Risco de relacionamento</small></summary>
+              <div><p>Ocorre quando o filtro pode percorrer mais de um caminho entre as mesmas tabelas. O Power BI pode bloquear a relação ou produzir um resultado difícil de prever.</p><dl><div><dt>No projeto</dt><dd>Evite criar atalhos entre fatos quando as dimensões já oferecem o caminho correto.</dd></div><div><dt>Sinal de alerta</dt><dd>Relações bidirecionais adicionadas apenas para “fazer o número funcionar”.</dd></div></dl></div>
+            </details>
+          </section>
+
+          <section class="glossary-group" id="calculos">
+            <div class="glossary-group-title"><span>04</span><h2>Cálculos no Power BI</h2></div>
+
+            <details class="glossary-card" id="dax">
+              <summary><span>DAX</span><small>Linguagem de fórmulas</small></summary>
+              <div><p><em>Data Analysis Expressions</em>: linguagem usada no Power BI para medidas, colunas calculadas e tabelas calculadas.</p><dl><div><dt>No projeto</dt><dd>Cria Receita, ADR, RevPAR, Ocupação, SLA e comparações de período.</dd></div><div><dt>Princípio</dt><dd>Uma fórmula DAX deve declarar claramente numerador, denominador e filtros.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="medida">
+              <summary><span>Medida</span><small>Cálculo dinâmico</small></summary>
+              <div><p>Cálculo DAX avaliado no momento em que o visual é consultado. Seu resultado muda conforme filtros, linhas, colunas e segmentações.</p><dl><div><dt>No projeto</dt><dd><code>Receita Hospedagem</code> muda ao selecionar hotel, período ou canal.</dd></div><div><dt>Diferença</dt><dd>Uma coluna calculada guarda valor por linha; uma medida calcula para o contexto atual.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="contexto-filtro">
+              <summary><span>Contexto de filtro</span><small>Seleção ativa</small></summary>
+              <div><p>Conjunto de condições que determina quais linhas participam de um cálculo. Pode vir de um visual, segmentação, página ou função DAX.</p><dl><div><dt>No projeto</dt><dd>Ao selecionar “Gramado”, as medidas devem considerar apenas as reservas ligadas ao hotel.</dd></div><div><dt>Teste</dt><dd>Coloque a medida em uma matriz e observe se total e linhas respondem corretamente.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="kpi">
+              <summary><span>KPI</span><small>Indicador-chave</small></summary>
+              <div><p><em>Key Performance Indicator</em>: métrica escolhida para acompanhar um objetivo do negócio.</p><dl><div><dt>No projeto</dt><dd>ADR, RevPAR, Ocupação e SLA são KPIs.</dd></div><div><dt>Para decidir</dt><dd>Mostre valor, comparação e direção desejada; um número isolado não indica se o resultado é bom.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="semi-aditiva">
+              <summary><span>Métrica semi-aditiva</span><small>Cuidado com o tempo</small></summary>
+              <div><p>Métrica que pode ser agregada em algumas dimensões, mas não somada diretamente em todas — principalmente ao longo do tempo.</p><dl><div><dt>No projeto</dt><dd>Ocupação precisa considerar as noites dentro do período; somar percentuais mensais produz resultado incorreto.</dd></div><div><dt>Solução</dt><dd>Recalcule numerador e denominador no contexto total.</dd></div></dl></div>
+            </details>
+          </section>
+
+          <section class="glossary-group" id="hotelaria">
+            <div class="glossary-group-title"><span>05</span><h2>Indicadores de hotelaria</h2></div>
+
+            <details class="glossary-card" id="diarias-vendidas">
+              <summary><span>Diárias vendidas</span><small>Volume</small></summary>
+              <div><p>Total de noites ocupadas por reservas válidas. Uma reserva de três noites representa três diárias vendidas.</p><dl><div><dt>No projeto</dt><dd>Considere hospedagens realizadas e hospedadas; exclua canceladas, no-show e apenas confirmadas.</dd></div><div><dt>Uso</dt><dd>É o denominador do ADR e o numerador da ocupação.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="diarias-disponiveis">
+              <summary><span>Diárias disponíveis</span><small>Capacidade</small></summary>
+              <div><p>Total de noites que poderiam ser vendidas no período. Com 100 quartos durante 30 dias, há 3.000 diárias disponíveis.</p><dl><div><dt>Fórmula básica</dt><dd><code>Quartos disponíveis × Dias do período</code>.</dd></div><div><dt>Uso</dt><dd>É o denominador da ocupação e do RevPAR.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="adr">
+              <summary><span>ADR</span><small>Preço médio</small></summary>
+              <div><p><em>Average Daily Rate</em>: valor médio recebido por diária vendida.</p><dl><div><dt>Fórmula</dt><dd><code>Receita de Hospedagem ÷ Diárias Vendidas</code>.</dd></div><div><dt>Interpretação</dt><dd>ADR alto indica preço maior, mas não informa quantos quartos ficaram vazios.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="ocupacao">
+              <summary><span>Taxa de ocupação</span><small>Uso da capacidade</small></summary>
+              <div><p>Percentual das diárias disponíveis que foram vendidas no período.</p><dl><div><dt>Fórmula</dt><dd><code>Diárias Vendidas ÷ Diárias Disponíveis</code>.</dd></div><div><dt>Cuidado</dt><dd>Uma estadia que atravessa meses deve contribuir com as noites correspondentes a cada período.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="revpar">
+              <summary><span>RevPAR</span><small>Receita por capacidade</small></summary>
+              <div><p><em>Revenue per Available Room</em>: receita de hospedagem gerada por quarto disponível.</p><dl><div><dt>Fórmula</dt><dd><code>Receita de Hospedagem ÷ Diárias Disponíveis</code>, ou <code>ADR × Ocupação</code>.</dd></div><div><dt>Interpretação</dt><dd>Ajuda a comparar hotéis equilibrando preço e ocupação.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="revenue-management">
+              <summary><span>Revenue management</span><small>Estratégia</small></summary>
+              <div><p>Prática de ajustar preço e disponibilidade conforme demanda, antecedência, canal, época e perfil do hotel.</p><dl><div><dt>No projeto</dt><dd>A tarifa varia por sazonalidade, dia da semana e lead time.</dd></div><div><dt>Pergunta</dt><dd>O hotel poderia cobrar mais em períodos de alta ocupação ou estimular demanda nos períodos fracos?</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="sazonalidade">
+              <summary><span>Sazonalidade</span><small>Padrão no tempo</small></summary>
+              <div><p>Variação de demanda que tende a se repetir conforme mês, estação, férias, feriados ou dia da semana.</p><dl><div><dt>No projeto</dt><dd>Praia ganha força no verão; serra, no inverno; hotéis urbanos, em dias úteis.</dd></div><div><dt>Visual</dt><dd>Linha mensal ou heatmap por mês e perfil de destino.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="lead-time">
+              <summary><span>Lead time</span><small>Antecedência</small></summary>
+              <div><p>Número de dias entre a data em que a reserva foi criada e o check-in.</p><dl><div><dt>Fórmula</dt><dd><code>Data_Checkin − Data_Reserva</code>.</dd></div><div><dt>Uso</dt><dd>Ajuda a planejar preço e campanha: última hora e reserva antecipada têm comportamentos diferentes.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="no-show">
+              <summary><span>No-show</span><small>Status de reserva</small></summary>
+              <div><p>Situação em que o hóspede não comparece para o check-in e não utiliza a hospedagem.</p><dl><div><dt>No projeto</dt><dd>É um status diferente de cancelamento.</dd></div><div><dt>Análise</dt><dd>Compare taxa de no-show por canal, antecedência e hotel para orientar políticas de garantia.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="check-in">
+              <summary><span>Check-in</span><small>Entrada</small></summary>
+              <div><p>Procedimento que registra a chegada do hóspede e o início da estadia.</p><dl><div><dt>No projeto</dt><dd><code>Data_Checkin</code> é usada para calcular noites, lead time e análise de chegada.</dd></div><div><dt>Validação</dt><dd>Deve ocorrer depois da reserva e antes do check-out.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="check-out">
+              <summary><span>Check-out</span><small>Saída</small></summary>
+              <div><p>Procedimento que encerra a hospedagem e registra a saída do hóspede.</p><dl><div><dt>No projeto</dt><dd><code>Data_Checkout − Data_Checkin</code> determina o número de noites.</dd></div><div><dt>Validação</dt><dd>A data deve ser posterior ao check-in.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="taxa-cancelamento">
+              <summary><span>Taxa de cancelamento</span><small>Perda de reservas</small></summary>
+              <div><p>Percentual das reservas que foram canceladas dentro do conjunto analisado.</p><dl><div><dt>Fórmula</dt><dd><code>Reservas canceladas ÷ Total de reservas</code>.</dd></div><div><dt>Análise</dt><dd>Compare canal, hotel, antecedência e período antes de propor uma política.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="comissao">
+              <summary><span>Comissão de canal</span><small>Custo de venda</small></summary>
+              <div><p>Percentual da reserva pago ao intermediário que realizou a venda.</p><dl><div><dt>No projeto</dt><dd>BookNow cobra 18%, ViajaMais 15% e Agência 10%; canais diretos têm 0% nesta simulação.</dd></div><div><dt>Impacto</dt><dd>Receita bruta semelhante pode gerar receita líquida diferente.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="receita-bruta">
+              <summary><span>Receita bruta</span><small>Antes dos descontos</small></summary>
+              <div><p>Valor total cobrado pelas hospedagens antes de descontar comissão de canal ou outros custos.</p><dl><div><dt>No projeto</dt><dd><code>Noites × Diária média cobrada</code> para reservas válidas.</dd></div><div><dt>Limite</dt><dd>Não representa necessariamente o valor que permanece com o hotel.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="receita-liquida">
+              <summary><span>Receita líquida de canal</span><small>Após comissão</small></summary>
+              <div><p>Receita após descontar a comissão paga ao canal que originou a reserva.</p><dl><div><dt>Fórmula</dt><dd><code>Receita bruta × (1 − percentual de comissão)</code>.</dd></div><div><dt>Uso</dt><dd>Permite comparar canais diretos, OTAs e agências com justiça.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="sla">
+              <summary><span>SLA</span><small>Prazo de atendimento</small></summary>
+              <div><p><em>Service Level Agreement</em>: compromisso de tempo para resolver um chamado, de acordo com a prioridade.</p><dl><div><dt>No projeto</dt><dd>Alta = 2 horas, Média = 8 horas e Baixa = 24 horas.</dd></div><div><dt>KPI</dt><dd><code>Chamados dentro do prazo ÷ Total de chamados</code>.</dd></div></dl></div>
+            </details>
+          </section>
+
+          <section class="glossary-group" id="analise">
+            <div class="glossary-group-title"><span>06</span><h2>Análise e entrega</h2></div>
+
+            <details class="glossary-card" id="analytics">
+              <summary><span>Analytics</span><small>Uso dos dados</small></summary>
+              <div><p>Conjunto de práticas para transformar dados em explicações, previsões ou decisões. Vai além de construir gráficos.</p><dl><div><dt>No projeto</dt><dd>Você deve identificar padrões e propor três ações sustentadas pelos indicadores.</dd></div><div><dt>Estrutura</dt><dd>Contexto → evidência → recomendação.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="segmentacao">
+              <summary><span>Segmentação de dados</span><small>Filtro visual</small></summary>
+              <div><p>Visual do Power BI que permite ao usuário escolher valores para filtrar os demais elementos da página.</p><dl><div><dt>No projeto</dt><dd>Use período, hotel, bandeira, canal e perfil de destino.</dd></div><div><dt>Usabilidade</dt><dd>Mostre claramente quando há filtro aplicado e ofereça forma fácil de limpar a seleção.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="benchmark">
+              <summary><span>Benchmark</span><small>Referência de comparação</small></summary>
+              <div><p>Valor usado para interpretar desempenho: meta, média da rede, melhor hotel ou período anterior.</p><dl><div><dt>No projeto</dt><dd>Compare o RevPAR de cada hotel com a média da rede e com seu próprio histórico.</dd></div><div><dt>Por que importa</dt><dd>Sem comparação, um número isolado não informa se o resultado é bom ou ruim.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="insight">
+              <summary><span>Insight</span><small>Descoberta acionável</small></summary>
+              <div><p>Conclusão relevante obtida dos dados que explica um comportamento ou revela uma oportunidade.</p><dl><div><dt>No projeto</dt><dd>Entregue pelo menos três insights sustentados por medidas e visuais.</dd></div><div><dt>Boa formulação</dt><dd>Diga o que aconteceu, onde, quanto mudou e por que isso merece ação.</dd></div></dl></div>
+            </details>
+
+            <details class="glossary-card" id="dashboard">
+              <summary><span>Dashboard</span><small>Painel de decisão</small></summary>
+              <div><p>Conjunto organizado de indicadores e visuais que permite acompanhar desempenho e investigar causas.</p><dl><div><dt>No projeto</dt><dd>O produto final terá quatro páginas: executiva, receita, demanda e operação.</dd></div><div><dt>Critério</dt><dd>Uma pessoa deve entender o problema e decidir o próximo passo em até cinco minutos.</dd></div></dl></div>
+            </details>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <div class="brand footer-brand"><span class="brand-mark">H</span><span><strong>Horizonte</strong><small>Hotéis &amp; Resorts</small></span></div>
+      <p>Glossário de apoio ao projeto educacional de Power BI.</p>
+      <a href="index.html">← Voltar ao projeto</a>
+    </div>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite">Copiado para a área de transferência.</div>
+  <script src="script.js" defer></script>
+</body>
+</html>
