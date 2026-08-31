@@ -1,5 +1,12 @@
 # Horizonte Hotéis & Resorts — Guia de estudo Power BI
 
+## Ponto de partida obrigatório
+
+Comece pela **V1 desnormalizada**. A tarefa inclui identificar os assuntos
+repetidos e separar hotéis, quartos, hóspedes, reservas e demais entidades. A V2
+é somente um checkpoint opcional para comparação depois que seu modelo estiver
+proposto; não deve ser usada como ponto de partida.
+
 Dataset sintético de hotelaria: **49,472 reservas**,
 148,879 consumos extras e 5,000 chamados de
 manutenção em 10 hotéis (426 quartos),
